@@ -15,7 +15,7 @@ class Author(models.Model):
     lastname = models.CharField(db_column='LastName', max_length=45, blank=True, null=True)  # Field name made lowercase. 
     
     def __str__(self):
-        return self.lastname
+        return self.firstname + " " + self.lastname
     
     class Meta:
         managed = True
