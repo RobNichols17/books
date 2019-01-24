@@ -61,7 +61,7 @@ class Price(models.Model):
     listprice = models.DecimalField(db_column='ListPrice', max_digits=10, decimal_places=2, blank=True, null=True)  # Field name made lowercase.
 
     def __str__(self):
-        return self.name
+        return self.listprice
 
     class Meta:
         managed = True
@@ -93,7 +93,7 @@ class Sale(models.Model):
     customerid = models.ForeignKey(Customer, models.DO_NOTHING, db_column='CustomerID', blank=True, null=True)  # Field name made lowercase.
 
     def __str__(self):
-        return self.name
+        return self.saleid
 
     class Meta:
         managed = True
