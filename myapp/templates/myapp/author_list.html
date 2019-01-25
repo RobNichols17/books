@@ -6,10 +6,12 @@
 	    <div>
 		<h1><a href="/">Rob's Book Ordering System</a></h1>
 	    </div>
-	    <div>
-		    {% for author in authors %} 
+
+	    {% for author in authors %} 
+	        <div>
 		      {{ author }}
-		    {% endfor %}
-	    </div>
+		      <p>{{ linebreaksbr }}</p>
+		</div>
+	    {% endfor %}
 	</body>
 </html>
