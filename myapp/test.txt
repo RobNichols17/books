@@ -1,0 +1,1 @@
+\e[0;33m\u@Django Dev\]\e[0;37m\n\w$\]
